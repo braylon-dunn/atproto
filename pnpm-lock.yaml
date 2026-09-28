@@ -330,8 +330,8 @@ importers:
         specifier: ^1.234.0
         version: 1.234.0
       zod:
-        specifier: ^3.23.8
-        version: 3.24.2
+        specifier: ^4.6.5
+        version: 4.6.5
     devDependencies:
       '@atproto/lex-cli':
         specifier: workspace:^
@@ -536,8 +536,8 @@ importers:
         specifier: npm:undici@^8.x
         version: undici@8.5.0
       zod:
-        specifier: 3.23.8
-        version: 3.23.8
+        specifier: 4.6.5
+        version: 4.6.5
     devDependencies:
       '@atproto/pds':
         specifier: workspace:^
@@ -671,8 +671,8 @@ importers:
         specifier: workspace:^
         version: link:../syntax
       zod:
-        specifier: ^3.23.8
-        version: 3.24.2
+        specifier: ^4.6.5
+        version: 4.6.5
     devDependencies:
       jest:
         specifier: ^30.5.1
@@ -770,8 +770,8 @@ importers:
   packages/did:
     dependencies:
       zod:
-        specifier: ^3.23.8
-        version: 3.24.2
+        specifier: ^4.6.5
+        version: 4.6.5
     devDependencies:
       '@swc/jest':
         specifier: ^0.2.39
@@ -838,8 +838,8 @@ importers:
         specifier: workspace:^
         version: link:../../did
       zod:
-        specifier: ^3.23.8
-        version: 3.24.2
+        specifier: ^4.6.5
+        version: 4.6.5
 
   packages/internal/fetch:
     dependencies:
@@ -888,8 +888,8 @@ importers:
         specifier: workspace:^
         version: link:../../did
       zod:
-        specifier: ^3.23.8
-        version: 3.24.2
+        specifier: ^4.6.5
+        version: 4.6.5
     devDependencies:
       vitest:
         specifier: ^4.1.10
@@ -1031,8 +1031,8 @@ importers:
         specifier: ^0.4.0
         version: 0.4.0
       zod:
-        specifier: ^3.23.8
-        version: 3.24.2
+        specifier: ^4.6.5
+        version: 4.6.5
 
   packages/lex/lex:
     dependencies:
@@ -1355,8 +1355,8 @@ importers:
         specifier: ^13.0.0
         version: 13.4.2
       zod:
-        specifier: ^3.23.8
-        version: 3.24.2
+        specifier: ^4.6.5
+        version: 4.6.5
     devDependencies:
       jest:
         specifier: ^30.5.1
@@ -1396,8 +1396,8 @@ importers:
         specifier: ^13.0.0
         version: 13.4.2
       zod:
-        specifier: ^3.23.8
-        version: 3.24.2
+        specifier: ^4.6.5
+        version: 4.6.5
 
   packages/oauth/jwk-jose:
     dependencies:
@@ -1417,8 +1417,8 @@ importers:
         specifier: workspace:^
         version: link:../jwk-jose
       zod:
-        specifier: ^3.23.8
-        version: 3.24.2
+        specifier: ^4.6.5
+        version: 4.6.5
 
   packages/oauth/oauth-client:
     dependencies:
@@ -1459,8 +1459,8 @@ importers:
         specifier: ^13.0.0
         version: 13.4.2
       zod:
-        specifier: ^3.23.8
-        version: 3.24.2
+        specifier: ^4.6.5
+        version: 4.6.5
     devDependencies:
       vitest:
         specifier: ^4.1.10
@@ -1680,8 +1680,8 @@ importers:
         specifier: ^5.2.0
         version: 5.3.0
       zod:
-        specifier: ^3.23.8
-        version: 3.24.2
+        specifier: ^4.6.5
+        version: 4.6.5
     devDependencies:
       '@atproto-labs/rolldown-plugin-bundle-manifest':
         specifier: workspace:^
@@ -1848,8 +1848,8 @@ importers:
         specifier: workspace:^
         version: link:../jwk
       zod:
-        specifier: ^3.23.8
-        version: 3.24.2
+        specifier: ^4.6.5
+        version: 4.6.5
 
   packages/ozone:
     dependencies:
@@ -2122,8 +2122,8 @@ importers:
         specifier: ^8.5.0
         version: 8.5.0
       zod:
-        specifier: ^3.23.8
-        version: 3.24.2
+        specifier: ^4.6.5
+        version: 4.6.5
     devDependencies:
       '@atproto/api':
         specifier: workspace:^
@@ -2192,8 +2192,8 @@ importers:
         specifier: ^6.0.0
         version: 6.0.0
       zod:
-        specifier: ^3.23.8
-        version: 3.24.2
+        specifier: ^4.6.5
+        version: 4.6.5
     devDependencies:
       jest:
         specifier: ^30.5.1
@@ -2302,8 +2302,8 @@ importers:
         specifier: workspace:^
         version: link:../lexicon
       zod:
-        specifier: ^3.23.8
-        version: 3.24.2
+        specifier: ^4.6.5
+        version: 4.6.5
 
   packages/xrpc-server:
     dependencies:
@@ -10700,14 +10700,11 @@ packages:
   zod@3.23.8:
     resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
 
-  zod@3.24.2:
-    resolution: {integrity: sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ==}
-
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
-  zod@4.5.4:
-    resolution: {integrity: sha512-sC95tT5iHHH9gtpj6A81kh+NEaRAUFN+qlUPDUbRfOMvNf5QCBqsb3WgvnpVtK5Y+4UfA6KqufotuTvMGiTlsA==}
+  zod@4.6.5:
+    resolution: {integrity: sha512-v5l/aFXZQeai4awLbOpSoHecE9UiMrnfx75tEXLjNonXVARxQ5mOeipTjROUchszUNCqnE+hqAMujRsRHsut2Q==}
 
 snapshots:
 
@@ -10716,14 +10713,14 @@ snapshots:
       '@ipld/dag-cbor': 7.0.3
       multiformats: 9.9.0
       pino: 8.21.0
-      zod: 3.23.8
+      zod: 3.25.76
 
   '@atproto/common@0.1.1':
     dependencies:
       '@ipld/dag-cbor': 7.0.3
       multiformats: 9.9.0
       pino: 8.21.0
-      zod: 3.23.8
+      zod: 3.25.76
 
   '@atproto/crypto@0.1.0':
     dependencies:
@@ -15202,7 +15199,7 @@ snapshots:
       jiti: 2.7.0
       magic-string: 0.30.21
       prettier: 3.9.6
-      zod: 4.5.4
+      zod: 4.6.5
     transitivePeerDependencies:
       - supports-color
 
@@ -15216,7 +15213,7 @@ snapshots:
       '@tanstack/router-utils': 1.162.2
       chokidar: 5.0.0
       unplugin: 3.3.0(rolldown@1.2.7)(vite@8.2.2(@types/node@22.20.1)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.0))
-      zod: 4.5.4
+      zod: 4.6.5
     optionalDependencies:
       '@tanstack/react-router': 1.170.32(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       vite: 8.2.2(@types/node@22.20.1)(jiti@2.7.0)(terser@5.44.0)(yaml@2.9.0)
@@ -21050,8 +21047,6 @@ snapshots:
 
   zod@3.23.8: {}
 
-  zod@3.24.2: {}
-
   zod@3.25.76: {}
 
-  zod@4.5.4: {}
+  zod@4.6.5: {}
