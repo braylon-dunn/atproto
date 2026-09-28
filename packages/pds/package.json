@@ -97,7 +97,7 @@
     "@types/express-serve-static-core": "^4.17.36",
     "@types/nodemailer": "^6.4.6",
     "@types/qs": "^6.15.1",
-    "get-port": "^6.1.2",
+    "get-port": "^7.2.0",
     "jest": "^30.5.1",
     "puppeteer": "^23.11.1",
     "ws": "^8.12.0"

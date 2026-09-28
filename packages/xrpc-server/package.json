@@ -56,7 +56,7 @@
     "@types/http-errors": "^2.0.4",
     "@types/mime-types": "^3.0.1",
     "@types/ws": "^8.5.4",
-    "get-port": "^6.1.2",
+    "get-port": "^7.2.0",
     "jest": "^30.5.1",
     "jose": "^5.0.1",
     "multiformats": "^13.0.0"

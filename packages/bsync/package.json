@@ -54,7 +54,7 @@
     "@bufbuild/protoc-gen-es": "^1.5.0",
     "@connectrpc/protoc-gen-connect-es": "^1.7.0",
     "@types/pg": "^8.15.5",
-    "get-port": "^5.1.1",
+    "get-port": "^7.2.0",
     "jest": "^30.5.1"
   },
   "scripts": {
