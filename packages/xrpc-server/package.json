@@ -58,7 +58,7 @@
     "@types/ws": "^8.5.4",
     "get-port": "^6.1.2",
     "jest": "^30.5.1",
-    "jose": "^5.0.1",
+    "jose": "^6.2.12",
     "multiformats": "^13.0.0"
   },
   "scripts": {
