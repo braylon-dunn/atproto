@@ -546,11 +546,11 @@ importers:
         specifier: ^1.72.0
         version: 1.72.0
       '@bufbuild/protoc-gen-es':
-        specifier: ^1.5.0
-        version: 1.6.0(@bufbuild/protobuf@1.6.0)
+        specifier: ^2.16.0
+        version: 2.16.0(@bufbuild/protobuf@1.6.0)
       '@connectrpc/protoc-gen-connect-es':
         specifier: ^1.7.0
-        version: 1.7.0(@bufbuild/protoc-gen-es@1.6.0(@bufbuild/protobuf@1.6.0))(@connectrpc/connect@1.3.0(@bufbuild/protobuf@1.6.0))
+        version: 1.7.0(@bufbuild/protoc-gen-es@2.16.0(@bufbuild/protobuf@1.6.0))(@connectrpc/connect@1.3.0(@bufbuild/protobuf@1.6.0))
       '@did-plc/server':
         specifier: ^0.0.1
         version: 0.0.1
@@ -619,11 +619,11 @@ importers:
         specifier: ^1.72.0
         version: 1.72.0
       '@bufbuild/protoc-gen-es':
-        specifier: ^1.5.0
-        version: 1.6.0(@bufbuild/protobuf@1.6.0)
+        specifier: ^2.16.0
+        version: 2.16.0(@bufbuild/protobuf@1.6.0)
       '@connectrpc/protoc-gen-connect-es':
         specifier: ^1.7.0
-        version: 1.7.0(@bufbuild/protoc-gen-es@1.6.0(@bufbuild/protobuf@1.6.0))(@connectrpc/connect@1.3.0(@bufbuild/protobuf@1.6.0))
+        version: 1.7.0(@bufbuild/protoc-gen-es@2.16.0(@bufbuild/protobuf@1.6.0))(@connectrpc/connect@1.3.0(@bufbuild/protobuf@1.6.0))
       '@types/pg':
         specifier: ^8.15.5
         version: 8.20.0
@@ -3189,12 +3189,15 @@ packages:
   '@bufbuild/protobuf@1.6.0':
     resolution: {integrity: sha512-hp19vSFgNw3wBBcVBx5qo5pufCqjaJ0Cfk5H/pfjNOfNWU+4/w0QVOmfAOZNRrNWRrVuaJWxcN8P2vhOkkzbBQ==}
 
-  '@bufbuild/protoc-gen-es@1.6.0':
-    resolution: {integrity: sha512-m0akOPWeD5UBfGdZyudrbnmdjI8l/ZHlP8TyEIcj7qMCR4kh68tMtGvrjRzj5ynIpavrr6G7P06XP9F9f2MDRw==}
-    engines: {node: '>=14'}
+  '@bufbuild/protobuf@2.16.0':
+    resolution: {integrity: sha512-FWa0sPlqYGJgpTs6OxBRcL/AW4JT0OIO+W1ajerluoTVh8CV0B7XM1qsNCRgnkSCkRCgOICKHRQlY17jrsm0+Q==}
+
+  '@bufbuild/protoc-gen-es@2.16.0':
+    resolution: {integrity: sha512-LbPrEaGd7bOxKbJHllTR5439+PZjqd6fM7xyDZkDVtZ+Efzr7TMdMqShG9Qkf/nYVyiNS/SK5r9JhRaBTFkfZw==}
+    engines: {node: '>=22'}
     hasBin: true
     peerDependencies:
-      '@bufbuild/protobuf': 1.6.0
+      '@bufbuild/protobuf': 2.16.0
     peerDependenciesMeta:
       '@bufbuild/protobuf':
         optional: true
@@ -3202,8 +3205,8 @@ packages:
   '@bufbuild/protoplugin@1.10.1':
     resolution: {integrity: sha512-LaSbfwabAFIvbVnbn8jWwElRoffCIxhVraO8arliVwWupWezHLXgqPHEYLXZY/SsAR+/YsFBQJa8tAGtNPJyaQ==}
 
-  '@bufbuild/protoplugin@1.6.0':
-    resolution: {integrity: sha512-o53ZsvojHQkAPoC9v5sJifY2OfXdRU8DO3QpPoJ+QuvYcfB9Zb3DZkNMQRyfEbF4TVYiaQ0mZzZl1mESDdyCxA==}
+  '@bufbuild/protoplugin@2.16.0':
+    resolution: {integrity: sha512-3FdYJys34VhFnBQsjiV9wurBkX/DBACQAkAk+nCKdO1p8ROVNi7gmaRAcba+4qq8hQq8rYVukuutwvGCvd4kJA==}
 
   '@changesets/apply-release-plan@8.1.0':
     resolution: {integrity: sha512-M93HOGyX3ssg6He3b5NotaHtQVu6uajHS6UIQ28xKt2RzskCy73ayX4I914qBKjTJmrE4YFlELQjfcqxbmGLJw==}
@@ -4572,6 +4575,7 @@ packages:
   '@opentelemetry/propagator-jaeger@2.8.0':
     resolution: {integrity: sha512-Xnz9zZvvQzUw+9DrOn0MomR7BxFCkA2pcfXBQuHC28ndJpSbjLs7knzYb05kw5SyCjSsEWombkZMgGcJSk8JVg==}
     engines: {node: ^18.19.0 || >=20.6.0}
+    deprecated: Package no longer supported. See https://github.com/open-telemetry/opentelemetry-js/pull/7077
     peerDependencies:
       '@opentelemetry/api': '>=1.0.0 <1.10.0'
 
@@ -4642,12 +4646,14 @@ packages:
   '@opentelemetry/sdk-trace-base@2.8.0':
     resolution: {integrity: sha512-mhU4jp+vW0mGbFRd+GeXHvmfA4aDqWjBjLC3pE5XMpLs0IE2ryYb019Ts2AQrOq67gaTF25D91+fgvEHDZEnuQ==}
     engines: {node: ^18.19.0 || >=20.6.0}
+    deprecated: Use @opentelemetry/sdk-trace package
     peerDependencies:
       '@opentelemetry/api': '>=1.3.0 <1.10.0'
 
   '@opentelemetry/sdk-trace-node@2.8.0':
     resolution: {integrity: sha512-nZt9OGufioAc3AfoLTqA9bsAeaMJAictYDdI2VcNQ+PmT+3rfKjAZDZvgPfd8VPX0O5Bw1hdQF6kDK8VSpZiWg==}
     engines: {node: ^18.19.0 || >=20.6.0}
+    deprecated: Use @opentelemetry/sdk-trace package
     peerDependencies:
       '@opentelemetry/api': '>=1.0.0 <1.10.0'
 
@@ -6027,11 +6033,13 @@ packages:
     resolution: {integrity: sha512-mbCddXd+jm7hfx7w2YU64/Av4/NqqeG3GoRZgxPcgoTxYjhrcfJRw9ULch71SS4G+Q3bOXFhRvPqjguN0Hyp5w==}
     hasBin: true
 
-  '@typescript/vfs@1.5.0':
-    resolution: {integrity: sha512-AJS307bPgbsZZ9ggCT3wwpg3VbTKMFNHfaY/uF0ahSkYYrPF2dSSKDNIDIQAHm9qJqbLvCsSJH7yN4Vs/CsMMg==}
-
   '@typescript/vfs@1.6.4':
     resolution: {integrity: sha512-PJFXFS4ZJKiJ9Qiuix6Dz/OwEIqHD7Dme1UwZhTK11vR+5dqW2ACbdndWQexBzCx+CPuMe5WBYQWCsFyGlQLlQ==}
+    peerDependencies:
+      typescript: '*'
+
+  '@typescript/vfs@1.6.5':
+    resolution: {integrity: sha512-gobLHQLmvQGJInFk31NvgMd1uYzRXsd8qgnOssyLD055R2QPnw1ubRbBQ4+T+5qC7IQVuYXdvNDE2G7tMDVHgw==}
     peerDependencies:
       typescript: '*'
 
@@ -10233,6 +10241,11 @@ packages:
     engines: {node: '>=4.2.0'}
     hasBin: true
 
+  typescript@5.4.5:
+    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   typescript@6.0.3:
     resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
     engines: {node: '>=14.17'}
@@ -12084,9 +12097,11 @@ snapshots:
 
   '@bufbuild/protobuf@1.6.0': {}
 
-  '@bufbuild/protoc-gen-es@1.6.0(@bufbuild/protobuf@1.6.0)':
+  '@bufbuild/protobuf@2.16.0': {}
+
+  '@bufbuild/protoc-gen-es@2.16.0(@bufbuild/protobuf@1.6.0)':
     dependencies:
-      '@bufbuild/protoplugin': 1.6.0
+      '@bufbuild/protoplugin': 2.16.0
     optionalDependencies:
       '@bufbuild/protobuf': 1.6.0
     transitivePeerDependencies:
@@ -12100,11 +12115,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@bufbuild/protoplugin@1.6.0':
+  '@bufbuild/protoplugin@2.16.0':
     dependencies:
-      '@bufbuild/protobuf': 1.6.0
-      '@typescript/vfs': 1.5.0
-      typescript: 4.5.2
+      '@bufbuild/protobuf': 2.16.0
+      '@typescript/vfs': 1.6.5(typescript@5.4.5)
+      typescript: 5.4.5
     transitivePeerDependencies:
       - supports-color
 
@@ -12253,12 +12268,12 @@ snapshots:
     dependencies:
       '@bufbuild/protobuf': 1.6.0
 
-  '@connectrpc/protoc-gen-connect-es@1.7.0(@bufbuild/protoc-gen-es@1.6.0(@bufbuild/protobuf@1.6.0))(@connectrpc/connect@1.3.0(@bufbuild/protobuf@1.6.0))':
+  '@connectrpc/protoc-gen-connect-es@1.7.0(@bufbuild/protoc-gen-es@2.16.0(@bufbuild/protobuf@1.6.0))(@connectrpc/connect@1.3.0(@bufbuild/protobuf@1.6.0))':
     dependencies:
       '@bufbuild/protobuf': 1.10.1
       '@bufbuild/protoplugin': 1.10.1
     optionalDependencies:
-      '@bufbuild/protoc-gen-es': 1.6.0(@bufbuild/protobuf@1.6.0)
+      '@bufbuild/protoc-gen-es': 2.16.0(@bufbuild/protobuf@1.6.0)
       '@connectrpc/connect': 1.3.0(@bufbuild/protobuf@1.6.0)
     transitivePeerDependencies:
       - supports-color
@@ -15680,16 +15695,17 @@ snapshots:
     dependencies:
       '@typescript/old': typescript@6.0.3
 
-  '@typescript/vfs@1.5.0':
-    dependencies:
-      debug: 4.4.3
-    transitivePeerDependencies:
-      - supports-color
-
   '@typescript/vfs@1.6.4(typescript@4.5.2)':
     dependencies:
       debug: 4.4.3
       typescript: 4.5.2
+    transitivePeerDependencies:
+      - supports-color
+
+  '@typescript/vfs@1.6.5(typescript@5.4.5)':
+    dependencies:
+      debug: 4.4.3
+      typescript: 5.4.5
     transitivePeerDependencies:
       - supports-color
 
@@ -20602,6 +20618,8 @@ snapshots:
   typed-query-selector@2.12.0: {}
 
   typescript@4.5.2: {}
+
+  typescript@5.4.5: {}
 
   typescript@6.0.3: {}
 

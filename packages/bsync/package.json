@@ -51,7 +51,7 @@
   },
   "devDependencies": {
     "@bufbuild/buf": "^1.72.0",
-    "@bufbuild/protoc-gen-es": "^1.5.0",
+    "@bufbuild/protoc-gen-es": "^2.16.0",
     "@connectrpc/protoc-gen-connect-es": "^1.7.0",
     "@types/pg": "^8.15.5",
     "get-port": "^5.1.1",
